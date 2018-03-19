@@ -1,0 +1,80 @@
+V "GNAT Lib v2017"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ejercicio05%b		ejercicio05.adb		577dfac4 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W numeros_complejos%s	numeros_complejos.adb	numeros_complejos.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20170516105950 76789da1 ada%s
+D a-except.ads		20170516105952 291912d5 ada.exceptions%s
+D a-flteio.ads		20170516105952 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20170516105948 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105954 d3a89129 ada.tags%s
+D a-textio.ads		20170516105954 386df5d4 ada.text_io%s
+D a-tiflio.ads		20170516105948 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D ejercicio05.adb	20180319202740 1cffce54 ejercicio05%b
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-cstrea.ads		20170516105950 e53d8b8e interfaces.c_streams%s
+D numeros_complejos.ads	20180319173310 926586e4 numeros_complejos%s
+D system.ads		20170516105954 32a08138 system%s
+D s-conca2.ads		20170516105952 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20170516105948 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-ficobl.ads		20170516105956 078245e4 system.file_control_block%s
+D s-parame.ads		20170516105954 7e2a0d7f system.parameters%s
+D s-secsta.ads		20170516105954 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105950 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105954 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stratt.ads		20170516105948 aedef97e system.stream_attributes%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105952 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170516105954 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|2r6 2r23 3r6 3r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[8|46] 10|3w10 3r33
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|2w10 2r27
+166U14*New_Line 10|13s4
+242U14*Put 10|18s4 23s4 28s4 33s4 38s4
+263U14*Put_Line 10|9s4 14s4 15s4 17s4 20s4 22s4 25s4 27s4 30s4 32s4 35s4
+. 37s4 40s4
+X 10 ejercicio05.adb
+5U11*ejercicio05 5b11 43l5 43t16
+6r2 x{13|4R9} 10m4 14r32 19r7 24r7 29r7 34r7 39r12
+6r4 y{13|4R9} 11m4 15r32 19r9 24r9 29r9 34r9
+6r6 z{13|4R9} 19m4 20r23 24m4 25r23 29m4 30r23 34m4 35r23 39m4 40r23
+X 13 numeros_complejos.ads
+1K9*Numeros_Complejos 10|1w6 1r29 13|34e22
+4R9*Complejo 10|6r9 13|32e14
+8V13*Init{4R9} 10|10s7 11s7
+11V14*"+"{4R9} 10|19s8
+12V14*"-"{4R9} 10|24s8
+13V14*"*"{4R9} 10|29s8
+14V14*"/"{4R9} 10|34s8
+17V13*Conj{4R9} 10|39s7
+20V13*To_String{string} 10|14s22 15s22 20s13 25s13 30s13 35s13 40s13
+

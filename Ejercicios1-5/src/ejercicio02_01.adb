@@ -15,7 +15,7 @@ begin
          when 'A'|'B' => Put_Line("Opcion 1");
          when 'C'|'D'|'E' => Put_Line("Opcion 2");
          when 'F' => Put_Line("Opcion 3");
-        when others => Put_Line("Otra opcion");   
+         when others => Put_Line("Otra opcion");   
       end case;
       
    end loop;
