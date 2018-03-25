@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__ejercicio02.o
+[PROJECT FILES]
+C:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\practica01.gpr
+20180325120258
+[BOUND OBJECT FILES]
+C:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\obj\ejercicio02.o
+[GENERATED SOURCE FILES]
+b__ejercicio02.ads
+b__ejercicio02.adb
+b__ejercicio02.ali
+[RESULTING OPTIONS]
+-LC:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\obj\
+-LC:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\obj\
+-LC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
