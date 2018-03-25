@@ -21,13 +21,13 @@ package body ada_main is
    E078 : Short_Integer; pragma Import (Ada, E078, "system__object_reader_E");
    E045 : Short_Integer; pragma Import (Ada, E045, "system__dwarf_lines_E");
    E037 : Short_Integer; pragma Import (Ada, E037, "system__traceback__symbolic_E");
-   E101 : Short_Integer; pragma Import (Ada, E101, "ada__tags_E");
-   E099 : Short_Integer; pragma Import (Ada, E099, "ada__streams_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "system__file_control_block_E");
-   E114 : Short_Integer; pragma Import (Ada, E114, "system__finalization_root_E");
-   E112 : Short_Integer; pragma Import (Ada, E112, "ada__finalization_E");
-   E111 : Short_Integer; pragma Import (Ada, E111, "system__file_io_E");
-   E097 : Short_Integer; pragma Import (Ada, E097, "ada__text_io_E");
+   E006 : Short_Integer; pragma Import (Ada, E006, "ada__tags_E");
+   E105 : Short_Integer; pragma Import (Ada, E105, "ada__streams_E");
+   E113 : Short_Integer; pragma Import (Ada, E113, "system__file_control_block_E");
+   E112 : Short_Integer; pragma Import (Ada, E112, "system__finalization_root_E");
+   E110 : Short_Integer; pragma Import (Ada, E110, "ada__finalization_E");
+   E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
+   E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -36,7 +36,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E097 := E097 - 1;
+      E103 := E103 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -47,7 +47,7 @@ package body ada_main is
          procedure F2;
          pragma Import (Ada, F2, "system__file_io__finalize_body");
       begin
-         E111 := E111 - 1;
+         E109 := E109 - 1;
          F2;
       end;
       declare
@@ -172,20 +172,20 @@ package body ada_main is
       E078 := E078 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
-      E101 := E101 + 1;
+      E006 := E006 + 1;
       Ada.Streams'Elab_Spec;
-      E099 := E099 + 1;
+      E105 := E105 + 1;
       System.File_Control_Block'Elab_Spec;
-      E115 := E115 + 1;
+      E113 := E113 + 1;
       System.Finalization_Root'Elab_Spec;
-      E114 := E114 + 1;
-      Ada.Finalization'Elab_Spec;
       E112 := E112 + 1;
+      Ada.Finalization'Elab_Spec;
+      E110 := E110 + 1;
       System.File_Io'Elab_Body;
-      E111 := E111 + 1;
+      E109 := E109 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E097 := E097 + 1;
+      E103 := E103 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -221,9 +221,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\obj\ejercicio02.o
-   --   -LC:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\obj\
-   --   -LC:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Practicas\Practica01\obj\
+   --   C:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\ejercicio02.o
+   --   -LC:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\
+   --   -LC:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\
    --   -LC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
    --   -static
    --   -lgnat
