@@ -1,27 +1,25 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
-
+                          
 procedure ejercicio02 is
 
-   ts : Float := 0.0;--Temperatura de salida
-   te : Integer := 0;--Temperatura de entrada
-   type vectorTemperatura is array (Integer range <>) of Integer;--Tipo del vector que almacenará las temperaturas de entrada
-   tevector : vectorTemperatura(0..10);--Vector que almacenará las temperaturas de entrada. Para probar el código lo haremos introduciendo 10 valores que serán mostrados tras la ejecución del mismo
+ 
+  type vectorTemperatura is array (Integer range <>) of Integer;--Tipo del vector que almacenarï¿½ las temperaturas de entrada
+  type matriz is array (1..11,1..3) of Float;--Matriz que almacenarï¿½ el contenido de tabla1.txt
 
-   contador : Integer := 0;--Vamos a limitar a 100 el número de entradas por teclado, para eso necesitamos un contador que nos diga hasta donde funciona el programa
 
-   type matriz is array (1..11,1..3) of Float;--Matriz que almacenará el contenido de tabla1.txt
-
-   tabla : matriz;
-
-   Archivo_lectura : File_Type;
-
-   x : Integer;--Variable auxiliar que utilizaremos para leer los enteros del fichero
-   z : Float;--Variable auxiliar que utilizaremos para leer los float del fichero
-   y : Integer := 1;--Contador lectura y escritura de filas del archivo y posiciones del vector
-   Aaux : Float digits 4;--Variable auxiliar que utilizaremos para obtener el valor de A cuando Te no sea exacto
-   Baux : Float digits 2;--Variable auxiliar que utilizaremos para obtener el valor de B cuando Te no sea exacto
+  tevector : vectorTemperatura(0..10);--Vector que almacenarï¿½ las temperaturas de entrada. Para probar el cï¿½digo lo haremos introduciendo 10 valores que serï¿½n mostrados tras la ejecuciï¿½n del mismo
+  contador : Integer := 0;--Vamos a limitar a 100 el nï¿½mero de entradas por teclado, para eso necesitamos un contador que nos diga hasta donde funciona el programa
+  ts : Float := 0.0;--Temperatura de salida
+  te : Integer := 0;--Temperatura de entrada
+  tabla : matriz;
+  Archivo_lectura : File_Type;
+  x : Integer;--Variable auxiliar que utilizaremos para leer los enteros del fichero
+  z : Float;--Variable auxiliar que utilizaremos para leer los float del fichero
+  y : Integer := 1;--Contador lectura y escritura de filas del archivo y posiciones del vector
+  Aaux : Float digits 4;--Variable auxiliar que utilizaremos para obtener el valor de A cuando Te no sea exacto
+  Baux : Float digits 2;--Variable auxiliar que utilizaremos para obtener el valor de B cuando Te no sea exacto
 
 begin
    --Leemos el contenido del archivo Tabla 1.txt y lo guardamos en una variable llamada tabla
@@ -40,17 +38,17 @@ begin
    end loop;
    close(Archivo_lectura);--Cerramos el fichero
 
-   while contador < 10 loop--Delimitamos el número de iteraciones del programa
+   while contador < 10 loop--Delimitamos el nï¿½mero de iteraciones del programa
 
       New_Line;
       Put_Line("Introduzca la Temperatura de entrada: ");
       Get(te);--Tomamos por teclado la temperatura de entrada
 
-   if te < 50 then--Calculamos la temperatura de salida en función de las ecuaciones del enunciado
+   if te < 50 then--Calculamos la temperatura de salida en funciï¿½n de las ecuaciones del enunciado
       Put_Line("El valor Te = " & te'Img & " introducido es inferior al rango (50,100), por lo tanto Ts = 0");
       ts := 0.0;
    elsif te < 55 then
-      y := 1;--Valor de la posición del rango en la matriz
+      y := 1;--Valor de la posiciï¿½n del rango en la matriz
          if te = 50 then
             ts := Float(te) * tabla(y,2) + tabla(y,3);
          else
@@ -151,12 +149,12 @@ begin
       contador := contador + 1;--Incrementamos el contador
    end loop;
 
-   contador := 0;--Reiniciamos el contador para recorrer el vector
-   New_Line;--Para una mejor visualización por pantalla
-   Put_Line("Mostramos el contenido del vector de Temperaturas de entrada");
-   while contador < 10 loop--Bucle para mostrar el contenido de los valores almacenados en tevector
-      Put(tevector(contador)'Img & " ");
-      contador := contador + 1;
-   end loop;
+  contador := 0;--Reiniciamos el contador para recorrer el vector
+  New_Line;--Para una mejor visualizaciï¿½n por pantalla
+  Put_Line("Mostramos el contenido del vector de Temperaturas de entrada");
+  while contador < 10 loop--Bucle para mostrar el contenido de los valores almacenados en tevector
+    Put(tevector(contador)'Img & " ");
+    contador := contador + 1;
+  end loop;
    
 end ejercicio02;
