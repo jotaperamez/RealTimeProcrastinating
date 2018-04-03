@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__ejercicio08_02_task_dynamic.o
+[PROJECT FILES]
+C:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Ejercicios\Ejercicios1-10\default.gpr
+20180403153322
+[BOUND OBJECT FILES]
+C:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Ejercicios\Ejercicios1-10\obj\ejercicio08_02_task_dynamic.o
+[GENERATED SOURCE FILES]
+b__ejercicio08_02_task_dynamic.ads
+b__ejercicio08_02_task_dynamic.adb
+b__ejercicio08_02_task_dynamic.ali
+[RESULTING OPTIONS]
+-LC:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Ejercicios\Ejercicios1-10\obj\
+-LC:\Users\jotap\Documents\VSCODE\RealTimeProcrastinating\Ejercicios\Ejercicios1-10\obj\
+-LC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+C:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
