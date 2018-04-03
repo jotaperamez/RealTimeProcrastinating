@@ -1,0 +1,54 @@
+V "GNAT Lib v2017"
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U sensores%b		sensores.adb		b126a19c NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+
+U sensores%s		sensores.ads		c4122bd1 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+
+D ada.ads		20170516105950 76789da1 ada%s
+D a-numeri.ads		20170516105950 bb51c45a ada.numerics%s
+D a-nuflra.ads		20170516105950 4056ab7a ada.numerics.float_random%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D sensores.ads		20180325191430 844480ab sensores%s
+D sensores.adb		20180325191430 75348a4d sensores%b
+D system.ads		20170516105954 32a08138 system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-rannum.ads		20170516105952 99ade2f2 system.random_numbers%s
+D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
+X 1 ada.ads
+16K9*Ada 20e8 6|2r6 2r37 7|2r6 2r37
+X 2 a-numeri.ads
+16K13*Numerics 32e17 6|2r10 2r41 7|2r10 2r41
+X 3 a-nuflra.ads
+41K22*Float_Random 74e30 6|2w19 2r50 7|2w19 2r50
+47R9*Generator<10|63R9> 6|8r8
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<10|71p13> 7|10s16 10s38
+53U14*Reset<10|100p14> 7|8s7
+X 6 sensores.ads
+3K9*Sensores 7E4 9l5 9e13 7|3b14 15l5 15t13
+4F12*Voltaje{float}
+5V13*LeerSensor{float} 5>24 7|5b13 13l8 13t18
+5i24 i{integer} 7|5b24 10r34
+7a4 ruido(float) 7|10r28
+8r4 G{3|47R9} 7|8r13 10r23 10r45
+X 7 sensores.adb
+6f7 V{float} 10m7 12r14
+

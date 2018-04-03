@@ -15,19 +15,19 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U ada_main%b		b__ejercicio02.adb	d61f0e87 NE OO PK IL
+U ada_main%b		b__ejercicio02.adb	1c65231e NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W system%s		system.ads		system.ali
 
-U ada_main%s		b__ejercicio02.ads	98fcd9d6 EE NE OO PK IL
+U ada_main%s		b__ejercicio02.ads	7ffa334b EE NE OO PK IL
 W system%s		system.ads		system.ali
 
 D ada.ads		20170516105950 76789da1 ada%s
 D a-except.ads		20170516105952 291912d5 ada.exceptions%s
 D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
-D b__ejercicio02.ads	20180325153136 aa5c58ee ada_main%s
-D b__ejercicio02.adb	20180325153136 555a44bc ada_main%b
+D b__ejercicio02.ads	20180325191852 4d5ab273 ada_main%s
+D b__ejercicio02.adb	20180325191852 782683b8 ada_main%b
 D system.ads		20170516105954 32a08138 system%s
 D s-parame.ads		20170516105954 7e2a0d7f system.parameters%s
 D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
@@ -37,7 +37,7 @@ X 1 ada.ads
 X 2 a-except.ads
 54K13*Exceptions 349e19 5|6w10
 X 4 b__ejercicio02.ads
-4K9*ada_main 510l5 510e13 5|8b14 233l5 233t13
+4K9*ada_main 411l5 411e13 5|8b14 233l5 233t13
 6i4*gnat_argc{integer} 10m22 10r22 5|211m7
 7m4*gnat_argv{6|67M9} 11m22 11r22 5|212m7
 8m4*gnat_envp{6|67M9} 12m22 12r22 5|213m7
@@ -61,10 +61,7 @@ X 4 b__ejercicio02.ads
 . 216r22 218r22 220r22 222r22 224r22 226r22 228r22 230r22 232r22 234r22 236r22
 . 238r22 240r22 242r22 244r22 246r22 248r22 250r22 252r22 254r22 256r22 258r22
 . 260r22 262r22 264r22 266r22 268r22 270r22 272r22 274r22 276r22 278r22 280r22
-. 282r22 284r22 286r22 288r22 290r22 292r22 294r22 296r22 298r22 300r22 302r22
-. 304r22 306r22 308r22 310r22 312r22 314r22 316r22 318r22 320r22 322r22 324r22
-. 326r22 328r22 330r22 332r22 334r22 336r22 338r22 340r22 342r22 344r22 346r22
-. 348r22
+. 282r22
 38m4*u00001{37M9} 39r22
 40m4*u00002{37M9} 41r22
 42m4*u00003{37M9} 43r22
@@ -188,39 +185,6 @@ X 4 b__ejercicio02.ads
 278m4*u00121{37M9} 279r22
 280m4*u00122{37M9} 281r22
 282m4*u00123{37M9} 283r22
-284m4*u00124{37M9} 285r22
-286m4*u00125{37M9} 287r22
-288m4*u00126{37M9} 289r22
-290m4*u00127{37M9} 291r22
-292m4*u00128{37M9} 293r22
-294m4*u00129{37M9} 295r22
-296m4*u00130{37M9} 297r22
-298m4*u00131{37M9} 299r22
-300m4*u00132{37M9} 301r22
-302m4*u00133{37M9} 303r22
-304m4*u00134{37M9} 305r22
-306m4*u00135{37M9} 307r22
-308m4*u00136{37M9} 309r22
-310m4*u00137{37M9} 311r22
-312m4*u00138{37M9} 313r22
-314m4*u00139{37M9} 315r22
-316m4*u00140{37M9} 317r22
-318m4*u00141{37M9} 319r22
-320m4*u00142{37M9} 321r22
-322m4*u00143{37M9} 323r22
-324m4*u00144{37M9} 325r22
-326m4*u00145{37M9} 327r22
-328m4*u00146{37M9} 329r22
-330m4*u00147{37M9} 331r22
-332m4*u00148{37M9} 333r22
-334m4*u00149{37M9} 335r22
-336m4*u00150{37M9} 337r22
-338m4*u00151{37M9} 339r22
-340m4*u00152{37M9} 341r22
-342m4*u00153{37M9} 343r22
-344m4*u00154{37M9} 345r22
-346m4*u00155{37M9} 347r22
-348m4*u00156{37M9} 349r22
 X 5 b__ejercicio02.adb
 10i4 E070{short_integer} 10m46 10r46 159m7 159r15
 11i4 E013{short_integer} 11m46 11r46 156m7 156r15
@@ -236,13 +200,13 @@ X 5 b__ejercicio02.adb
 21i4 E078{short_integer} 21m46 21r46 172m7 172r15
 22i4 E045{short_integer} 22m46 22r46 167m7 167r15
 23i4 E037{short_integer} 23m46 23r46 171m7 171r15
-24i4 E101{short_integer} 24m46 24r46 175m7 175r15
-25i4 E099{short_integer} 25m46 25r46 177m7 177r15
-26i4 E115{short_integer} 26m46 26r46 179m7 179r15
-27i4 E114{short_integer} 27m46 27r46 181m7 181r15
-28i4 E112{short_integer} 28m46 28r46 183m7 183r15
-29i4 E111{short_integer} 29m46 29r46 50m10 50r18 185m7 185r15
-30i4 E097{short_integer} 30m46 30r46 39m7 39r15 188m7 188r15
+24i4 E006{short_integer} 24m46 24r46 175m7 175r15
+25i4 E105{short_integer} 25m46 25r46 177m7 177r15
+26i4 E113{short_integer} 26m46 26r46 179m7 179r15
+27i4 E112{short_integer} 27m46 27r46 181m7 181r15
+28i4 E110{short_integer} 28m46 28r46 183m7 183r15
+29i4 E109{short_integer} 29m46 29r46 50m10 50r18 185m7 185r15
+30i4 E103{short_integer} 30m46 30r46 39m7 39r15 188m7 188r15
 32a4 Local_Priority_Specific_Dispatching{string} 130r9
 33a4 Local_Interrupt_States{string} 133r27
 35b4 Is_Elaborated{boolean} 69r14 72m7 119r10 122m7

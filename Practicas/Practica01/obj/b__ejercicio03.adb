@@ -1,7 +1,7 @@
 pragma Warnings (Off);
 pragma Ada_95;
-pragma Source_File_Name (ada_main, Spec_File_Name => "b__ejercicio02.ads");
-pragma Source_File_Name (ada_main, Body_File_Name => "b__ejercicio02.adb");
+pragma Source_File_Name (ada_main, Spec_File_Name => "b__ejercicio03.ads");
+pragma Source_File_Name (ada_main, Body_File_Name => "b__ejercicio03.adb");
 pragma Suppress (Overflow_Check);
 with Ada.Exceptions;
 
@@ -21,13 +21,17 @@ package body ada_main is
    E078 : Short_Integer; pragma Import (Ada, E078, "system__object_reader_E");
    E045 : Short_Integer; pragma Import (Ada, E045, "system__dwarf_lines_E");
    E037 : Short_Integer; pragma Import (Ada, E037, "system__traceback__symbolic_E");
-   E006 : Short_Integer; pragma Import (Ada, E006, "ada__tags_E");
-   E105 : Short_Integer; pragma Import (Ada, E105, "ada__streams_E");
-   E113 : Short_Integer; pragma Import (Ada, E113, "system__file_control_block_E");
-   E112 : Short_Integer; pragma Import (Ada, E112, "system__finalization_root_E");
-   E110 : Short_Integer; pragma Import (Ada, E110, "ada__finalization_E");
-   E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
-   E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
+   E123 : Short_Integer; pragma Import (Ada, E123, "ada__numerics_E");
+   E106 : Short_Integer; pragma Import (Ada, E106, "ada__tags_E");
+   E104 : Short_Integer; pragma Import (Ada, E104, "ada__streams_E");
+   E120 : Short_Integer; pragma Import (Ada, E120, "system__file_control_block_E");
+   E119 : Short_Integer; pragma Import (Ada, E119, "system__finalization_root_E");
+   E117 : Short_Integer; pragma Import (Ada, E117, "ada__finalization_E");
+   E116 : Short_Integer; pragma Import (Ada, E116, "system__file_io_E");
+   E006 : Short_Integer; pragma Import (Ada, E006, "ada__calendar_E");
+   E102 : Short_Integer; pragma Import (Ada, E102, "ada__text_io_E");
+   E129 : Short_Integer; pragma Import (Ada, E129, "system__random_seed_E");
+   E122 : Short_Integer; pragma Import (Ada, E122, "sensores_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -36,7 +40,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E103 := E103 - 1;
+      E102 := E102 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -47,7 +51,7 @@ package body ada_main is
          procedure F2;
          pragma Import (Ada, F2, "system__file_io__finalize_body");
       begin
-         E109 := E109 - 1;
+         E116 := E116 - 1;
          F2;
       end;
       declare
@@ -170,26 +174,35 @@ package body ada_main is
       System.Traceback.Symbolic'Elab_Body;
       E037 := E037 + 1;
       E078 := E078 + 1;
+      Ada.Numerics'Elab_Spec;
+      E123 := E123 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
-      E006 := E006 + 1;
+      E106 := E106 + 1;
       Ada.Streams'Elab_Spec;
-      E105 := E105 + 1;
+      E104 := E104 + 1;
       System.File_Control_Block'Elab_Spec;
-      E113 := E113 + 1;
+      E120 := E120 + 1;
       System.Finalization_Root'Elab_Spec;
-      E112 := E112 + 1;
+      E119 := E119 + 1;
       Ada.Finalization'Elab_Spec;
-      E110 := E110 + 1;
+      E117 := E117 + 1;
       System.File_Io'Elab_Body;
-      E109 := E109 + 1;
+      E116 := E116 + 1;
+      Ada.Calendar'Elab_Spec;
+      Ada.Calendar'Elab_Body;
+      E006 := E006 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E103 := E103 + 1;
+      E102 := E102 + 1;
+      System.Random_Seed'Elab_Body;
+      E129 := E129 + 1;
+      Sensores'Elab_Spec;
+      E122 := E122 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
-   pragma Import (Ada, Ada_Main_Program, "_ada_ejercicio02");
+   pragma Import (Ada, Ada_Main_Program, "_ada_ejercicio03");
 
    function main
      (argc : Integer;
@@ -221,7 +234,8 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\ejercicio02.o
+   --   C:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\sensores.o
+   --   C:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\ejercicio03.o
    --   -LC:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\
    --   -LC:\Users\jotap\Documents\VSCode\RealTimeProcrastinating\Practicas\Practica01\obj\
    --   -LC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
