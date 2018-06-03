@@ -1,5 +1,5 @@
-with io_concc,Data_Types,Practica2_ImprimirPantalla,Ada.Real_Time,ada.strings.unbounded,tarjeta_compartida,espera_selectiva,Ada.Integer_Text_IO;
-use io_concc,Data_Types,Practica2_ImprimirPantalla,Ada.Real_Time,ada.strings.unbounded,tarjeta_compartida,espera_selectiva,Ada.Integer_Text_IO;
+with io,Data_Types,Practica2_ImprimirPantalla,Ada.Real_Time,ada.strings.unbounded,tarjeta_compartida,espera_selectiva,Ada.Integer_Text_IO;
+use io,Data_Types,Practica2_ImprimirPantalla,Ada.Real_Time,ada.strings.unbounded,tarjeta_compartida,espera_selectiva,Ada.Integer_Text_IO;
 
 
 

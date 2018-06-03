@@ -9,7 +9,8 @@ package body tarjeta_compartida is
       loop
          
          accept Escribir (NombreTarea : in Unbounded_String; ajustes : in Unbounded_String) do
-            null;
+            Put_Line(To_String(NombreTarea) & "accede al recurso compartido");
+
           end Escribir;
        
       end loop;
